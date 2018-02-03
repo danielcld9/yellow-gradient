@@ -1,12 +1,14 @@
 
-
+<head>
+<!--<link rel="stylesheet" href="app/assets/stylesheets/application.scss">-->
+</head>
 
 <h1 class="myTitle">Hello world!!</h1>
 <h3 id="currentTemperature"></h3>
 <div id="userLocation"></div>
 
 <!--<body background="https://www.planwallpaper.com/static/images/Yellow-blur-background1.jpg">-->
-<body class="background-image"></body>
+<!--<background class="background-image"></body>-->
 
 <div>
 <script
@@ -33,7 +35,7 @@ function getRandomColor(){
 }
 
 function updateTemperatureOnHomepage(temp){
-  // console.log('ok, running updateTemperatureOnHomepage with: ', temp)
+  console.log('ok, running updateTemperatureOnHomepage with: ', temp)
   var temperature = "The current temperature in SF is: " + temp;
   $("#currentTemperature").html(temperature)
 }
